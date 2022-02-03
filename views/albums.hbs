@@ -1,7 +1,7 @@
 <div>
-    <div class="artists">
-        {{#each artistInfo}}
-            <div class="artist">
+    <div class="albums">
+        {{#each albums}}
+            <div class="album">
                  {{#if this.images}}
                 <img src="{{this.images.2.url}}" alt="{{this.name}}">
             {{else}}
@@ -10,7 +10,7 @@
             {{/if}}
                 <h2>{{this.name}}</h2>
                 <button>
-                    <a href="/albums/{{this.id}}">View Albums</a>
+                    <a href="/tracks/{{this.id}}">View Songs</a>
                 </button>
             </div>
         {{/each}}
